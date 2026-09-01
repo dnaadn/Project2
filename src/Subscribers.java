@@ -12,6 +12,8 @@ public class Subscribers extends Passenger{
         setReservedCar(car);
         double cost = car.getRoute().getTripPrice()*0.5;
         setTripCost(cost);
+
+        car.setMaxCapacity(car.getMaxCapacity() - 1);
     }
 
     @Override

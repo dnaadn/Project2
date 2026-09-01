@@ -28,6 +28,9 @@ public class NonSubscribers extends Passenger{
 
         setTripCost(cost);
 
+        car.setMaxCapacity(car.getMaxCapacity() - 1);
+
+
     }
 
     @Override
